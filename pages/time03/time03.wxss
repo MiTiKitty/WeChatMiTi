@@ -1,0 +1,62 @@
+/* pages/time03/time03.wxss */
+.box1 {
+  width: 300px;
+  height: 80px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+
+.box2 {
+  margin-top: 10px;
+  border: 1px solid #222;
+  width: 250px;
+  height: 100px;
+  white-space: normal;
+  overflow-x: hidden;
+}
+
+.box1 view,
+.box2 view {
+  width: 200px;
+  height: 70px;
+  display: inline-block;
+}
+
+.box1 view:nth-child(1),
+.box2 view:nth-child(1){
+  background-color: red;
+}
+
+.box1 view:nth-child(2),
+.box2 view:nth-child(2){
+  background-color: rgb(51, 255, 0);
+}
+
+.box1 view:nth-child(3),
+.box2 view:nth-child(3){
+  background-color: rgb(189, 18, 137);
+}
+
+.box3 {
+  margin-left: 40px;
+  background-color: #34e;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.box4 {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+.box4 view {
+  background-color: pink;
+  border: 1px solid red;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}

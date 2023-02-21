@@ -1,0 +1,19 @@
+<!--pages/time03/time03.wxml-->
+<view>
+  <view class="box1" >
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+  </view>
+  <view class="box2">
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+  </view>
+  <view class="box3">
+  </view>
+  <view class="box4">
+    <view>
+    </view>
+  </view>
+</view>
