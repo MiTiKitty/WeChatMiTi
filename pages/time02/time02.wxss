@@ -1,0 +1,31 @@
+/* pages/time02/time02.wxss */
+.box {
+  width: 70px;
+  display: flexbox;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box view {
+  text-align: center;
+  line-height: 40px;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid aqua;
+}
+
+#v1 {
+  background-color: red;
+}
+
+#v2 {
+  background-color: rgb(72, 255, 0);
+}
+
+#v3 {
+  background-color: rgb(255, 0, 191);
+}

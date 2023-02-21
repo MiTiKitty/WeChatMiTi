@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/time03/time03",
+    "pages/time02/time02",
+    "pages/time01/time01",
     "pages/index/index",
     "pages/logs/logs"
   ],

@@ -1,0 +1,6 @@
+<!--pages/time02/time02.wxml-->
+<view class="box">
+  <view id="v1">1</view>
+  <view id="v2">2</view>
+  <view id="v3">3</view>
+</view>

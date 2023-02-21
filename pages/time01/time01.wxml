@@ -1,0 +1,8 @@
+<!--pages/time01/time01.wxml-->
+<view class="studyContainer">
+  <view class="box">
+    <view class="ch">1</view>
+    <view class="ch">2</view>
+    <view class="ch">3</view>
+  </view>
+</view>

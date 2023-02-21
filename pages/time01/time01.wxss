@@ -1,0 +1,38 @@
+/* pages/time01/time01.wxss */
+.studyContainer {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.box {
+  border: 2px solid #ed1de2;
+  border-radius: 5px;
+}
+
+.box::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.box view.ch {
+  line-height: 50px;
+  width: 100px;
+  height: 50px;
+  border: 1px solid #3e2ea1;
+  float: left;
+}
+
+.box view.ch:nth-child(1) {
+  background-color: red;
+}
+
+.box view.ch:nth-child(2) {
+  background-color: blue;
+}
+
+.box view.ch:nth-child(3) {
+  background-color: greenyellow;
+}
