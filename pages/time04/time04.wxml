@@ -1,0 +1,9 @@
+<!--pages/time04/time04.wxml-->
+<swiper class="box" indicator-dots="true" indicator-color="#fff" indicator-active-color="#f00" autoplay="true" interval="1500" circular="true">
+    <!-- <image wx:for="list" src="{{item.src}}"></image> -->
+    <swiper-item wx:for="{{list}}">
+      <view class="item" style="background-color: {{item.color}};">{{item.name}}</view>
+    </swiper-item>
+</swiper>
+<text>{{msg}}</text>
+<rich-text nodes="<h2>我是HTML中的h2标签</h2>"/>

@@ -1,0 +1,13 @@
+/* pages/time04/time04.wxss */
+.box {
+  width: 95%;
+  height: 300rpx;
+  border: 7px solid #ccc;
+}
+
+.item {
+  font-size: 100rpx;
+  text-align: center;
+  height: 300rpx;
+  line-height: 300rpx;
+}
