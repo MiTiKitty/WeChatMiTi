@@ -1,0 +1,6 @@
+<view class="box">
+  <button type="primary">主题按钮</button>
+  <button type="default">默认按钮</button>
+  <button type="warn">警告按钮</button>
+  <button class="size" size="mini" plain="true">镂空迷你按钮</button>
+</view>

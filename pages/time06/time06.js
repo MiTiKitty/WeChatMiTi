@@ -1,4 +1,4 @@
-// pages/time04/time04.js
+// pages/time06/time06.js
 Page({
 
   /**
@@ -10,33 +10,7 @@ Page({
       {src: "https://img2.baidu.com/it/u=3202947311,1179654885&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500"},
       {src: "https://img1.baidu.com/it/u=1308526554,393095433&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800"},
       {src: "https://img2.baidu.com/it/u=1003272215,1878948666&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800"}
-    ],
-    list: [
-      {color: "#34d", name: "A"},
-      {color: "#2e1", name: "B"},
-      {color: "#0ae", name: "C"},
-      {color: "#3f9", name: "D"}
-    ],
-    msg: "老墨，我是猫，我想吃鱼了",
-    stuList: []
-  },
-
-  getStuInfo() {
-    wx.request({
-      url: 'http://localhost:8080/stu/list',
-      method: "GET",
-      success: (rep) => {
-        this.setData({
-          stuList: rep.data
-        })
-      },
-      fail: (e) => {
-        wx.showToast({
-          title: '请求网络失败！',
-          icon: "error"
-        })
-      }
-    })
+    ]
   },
 
   /**

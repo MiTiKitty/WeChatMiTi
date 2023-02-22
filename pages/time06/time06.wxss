@@ -1,0 +1,19 @@
+/* pages/time06/time06.wxss */
+view {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 70%;
+}
+
+.box-img {
+  display: inline-block;
+  width: 50%;
+  border: 1px solid #aaa;
+}
+
+.box-img image {
+  width: 100%;
+  height: 120px;
+}
