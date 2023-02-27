@@ -1,0 +1,23 @@
+<!--pages/time07/time07.wxml-->
+<view class="box">
+  <view class="top">
+    <text class="title">首页</text>
+  </view>
+  <swiper class="box-img" interval="1500" indicator-dots="true" indicator-color="#333" indicator-active-color="red" autoplay="true" circular="true">
+    <swiper-item wx:for="{{imgs}}">
+      <image wx:key="{{index}}" class="item-img" src="{{item.src}}" mode="widthFix" alt="图片无法加载"/>
+    </swiper-item>
+  </swiper>
+  <view class="info-box">
+    <view class="user-box" wx:for="{{users}}">
+      <view class="left-box">
+        <image class="item-img" src="{{item.avatar}}" alt="头像"/>
+      </view>
+      <view class="right-box">
+        <view class="info">姓名：{{item.name}}</view>
+        <view class="info">年龄：{{item.age}}</view>
+        <view class="info">介绍：{{item.description}}</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -16,7 +16,7 @@
   bottom right	裁剪模式，不缩放图片，只显示图片的右下边区域 
 -->
 <image src="../../images/猫5.jpg"></image>
-<view class="box" >
+<view class="box">
   <view class="box-img" wx:for="{{imgList}}">
     <image src="{{item.src}}"></image>
   </view>
