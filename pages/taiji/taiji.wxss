@@ -1,0 +1,66 @@
+/* pages/taiji/taiji.wxss */
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+.top, .bottom {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.top, .left {
+  border-top: 1px solid #fefefe;
+  border-right: 1px solid #fefefe;
+  border-left: 1px solid #fefefe;
+  border-radius: 100px 100px 0 0;
+}
+
+.bottom, .right {
+  border-left: 1px solid #fefefe;
+  border-bottom: 1px solid #fefefe;
+  border-right: 1px solid #fefefe;
+  border-radius: 0 0 100px 100px;
+}
+
+.left {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 0;
+  top: 50px;
+}
+
+.right {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 100px;
+  top: 0;
+}
+
+.cricle {
+  width: 25%;
+  height: 50%;
+  border-radius: 50%;
+  margin-left: 37.5%;
+}
+
+.a {
+  margin-top: 24%;
+}
+
+.b {
+  margin-top: 0;
+}
+
+.top, .right, .a {
+  background-color: grey;
+}
+
+.bottom, .left, .b {
+  background-color: #eeeeee;
+}

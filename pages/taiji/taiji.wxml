@@ -1,0 +1,14 @@
+<!--pages/taiji/taiji.wxml-->
+<text>pages/taiji/taiji.wxml</text>
+<view class="box">
+  <view class="top">
+    <view class="left">
+      <view class="cricle a"></view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="right">
+      <view class="cricle b"></view>
+    </view>
+  </view>
+</view>

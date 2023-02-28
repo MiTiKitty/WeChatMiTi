@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/time08/time08",
+    "pages/taiji/taiji",
     "pages/time07/time07",
     "pages/time04/time04",
     "pages/time05/time05",

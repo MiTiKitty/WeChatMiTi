@@ -1,0 +1,47 @@
+/* pages/time08/time08.wxss */
+.box {
+  position: relative;
+  width: 400rpx;
+  height: 400rpx;
+  margin: 10px auto;
+  border: 1px solid #d85454;
+  border-radius: 53% 23% 45% / 25% 67% 33%;
+}
+
+.box image {
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.a {
+  left: 50%;
+  top: 20px;
+  margin-left: -25%;
+  border-radius: 50% 20% 14% / 44% 76% 65%;
+}
+
+.b {
+  right: 15%;
+  bottom: 20px;
+  margin-right: -5%;
+  border-radius: 21% 65% 19% / 51% 40% 71%;
+}
+
+.gg {
+  position: fixed;
+  width: 100px;
+  height: 350px;
+  background-color: grey;
+  color: white;
+  border: 3px solid #73AD21;
+  bottom: 130px;
+}
+
+.q {
+  right: 30px;
+}
+
+.p {
+  left: 30px;
+}
