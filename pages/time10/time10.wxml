@@ -1,0 +1,12 @@
+<!--pages/time10/time10.wxml-->
+<view class="face">
+  <view class="top">
+    <view class="eye left">
+      <view class="c"></view>
+    </view>
+    <view class="eye right">
+      <view class="c"></view>
+    </view>
+  </view>
+  <view class="mouse"></view>
+</view>

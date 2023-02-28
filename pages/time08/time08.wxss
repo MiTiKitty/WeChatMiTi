@@ -39,9 +39,9 @@
 }
 
 .q {
-  right: 30px;
+  right: 0rpx;
 }
 
 .p {
-  left: 30px;
+  left: 0rpx;
 }
