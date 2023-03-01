@@ -1,4 +1,18 @@
 /* pages/taiji/taiji.wxss */
+.pop {
+  animation: ro 2s linear 2s infinite;
+  transition: transform 1s;
+}
+
+@keyframes ro {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .box {
   width: 200px;
   height: 200px;
@@ -58,9 +72,14 @@
 }
 
 .top, .right, .a {
-  background-color: grey;
+  background-color: rgb(228, 24, 24);
 }
 
 .bottom, .left, .b {
   background-color: #eeeeee;
+}
+
+.ror {
+  margin-top: 200px;
+  margin-left: 100px;
 }

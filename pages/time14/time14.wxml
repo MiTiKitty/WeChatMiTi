@@ -1,0 +1,5 @@
+<!--pages/time14/time14.wxml-->
+<text wx:if="{{msg.show}}">{{msg.num}}</text>
+<button type="primary" bindtap="changeTextShow">点我+1</button>
+<button type="default" bindtap="changeImgShow">点我显示隐藏图片</button>
+<image hidden="{{img.show}}" src="{{img.src}}" mode="widthFix"></image>

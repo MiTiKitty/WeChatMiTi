@@ -1,0 +1,4 @@
+<!--pages/time13/time13.wxml-->
+<text>{{msg}}-{{logo.name}}-{{logo.show}}</text>
+<image src="{{logo.src}}" wx:if="{{logo.show}}" lazy-load="true"></image>
+<button type="primary" bindtap="changeImgShow">点我</button>
