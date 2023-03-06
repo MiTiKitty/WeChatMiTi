@@ -1,0 +1,12 @@
+<!--pages/time15/time15.wxml-->
+<view class="box">
+  <view class="line">
+    {{num}}
+  </view>
+  <view class="line">
+    <button bindtap="addByCount">点击+{{count}}</button>
+  </view>
+  <view class="line">
+    <input type="number" bindinput="changeCount" model:value="{{count}}"/>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+/* pages/time15/time15.wxss */
+view {
+  box-sizing: border-box;
+}
+
+.box {
+  align-items: center;
+  text-align: center;
+}
+
+.line {
+  padding: 5px 0;
+}
