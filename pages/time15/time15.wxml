@@ -1,12 +1,25 @@
 <!--pages/time15/time15.wxml-->
 <view class="box">
   <view class="line">
-    {{num}}
+    num is {{num}}, count is {{count}}
   </view>
   <view class="line">
-    <button bindtap="addByCount">点击+{{count}}</button>
+    <button type="primary" bindtap="addByCount" data-info="3">点击+{{count}}</button>
   </view>
   <view class="line">
-    <input type="number" bindinput="changeCount" model:value="{{count}}"/>
+    <input class="my-input" type="number" bindinput="handleInputChangeCount" model:value="{{count}}"/>
+  </view>
+  <view class="line">
+    <view class="line" wx:if="{{name}}">姓名: {{name}}</view>
+    <view class="line">性别: {{sex}}</view>
+    <view class="line">你的年龄: 
+      <input class="my-input" type="number" bindinput="handleInputChangeCount" model:value="{{age}}"/>
+      <text wx:if="{{age * 1 <= 18}}">
+        {{age}}，写你作业去
+      </text>
+      <text wx:else="{{age * 1 > 18}}">
+        永远18,可以玩原神
+      </text>
+    </view>
   </view>
 </view>

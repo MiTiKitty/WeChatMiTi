@@ -6,17 +6,22 @@ Page({
    */
   data: {
     num: 0,
-    count: 1
+    count: 1,
+    name: '小明',
+    sex: '男',
+    age: 20
   },
 
-  changeCount(){
-    
+  handleInputChangeCount(e){
+    console.log('input 里面的value：', e.detail.value);
   },
 
-  addByCount(){
+  addByCount(e){
+    console.log(e.target.dataset.info);
     const {num, count} = this.data
     this.setData({
-      num: count * 1 + num
+      num: count * 1 + num,
+      count: count * 1
     })
   },
 

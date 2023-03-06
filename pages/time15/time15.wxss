@@ -11,3 +11,10 @@ view {
 .line {
   padding: 5px 0;
 }
+
+.my-input {
+  margin: 0 auto;
+  width: 400rpx;
+  text-align: start;
+  border: 1px solid #3ede4a;
+}
