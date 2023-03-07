@@ -1,0 +1,17 @@
+<!--pages/time17/time17.wxml-->
+<view class="box">
+  <view class="line">
+    <text>你点击下面那个按钮，查看某人信息</text>
+  </view>
+  <view class="line">
+      <button type="primary" bindtap="changeShowInfo">BUTTON</button>
+  </view>
+  <block wx:if="{{isShow}}">
+    <view class="line">姓名：{{person.name}}</view>
+    <view class="line">年龄：{{person.age}}</view>
+    <view class="line">性别：{{person.sex}}</view>
+  </block>
+  <view hidden="{{isShow}}" class="line A"></view>
+  <view class="line B"></view>
+  <view class="line C"></view>
+</view>

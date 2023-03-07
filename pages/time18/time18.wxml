@@ -1,0 +1,6 @@
+<!--pages/time18/time18.wxml-->
+<view class="box">
+  <view class="line" wx:for="{{gameList}}" wx:key="index" style="background-color: {{item.backColor}};">
+    <text style="color: {{item.color}};">{{item.name}}</text>
+  </view>
+</view>

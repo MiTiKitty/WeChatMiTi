@@ -1,0 +1,61 @@
+<!--pages/time16/time16.wxml-->
+<view class="box">
+  <view class="line">
+    <text>我的余额：{{money}}</text>
+  </view>
+  <view class="line">
+    <button type="primary" bindtap="addMoney">按我充值500块钱</button>
+  </view>
+  <!-- <view class="line" wx:for="{{heroList}}" wx:key="index">
+    <view class="hero-item" wx:if="{{money >= item.price}}">
+      <view class="left">
+        <image src="{{item.imgSrc}}"></image>
+      </view>
+      <view class="right">
+        姓名：{{item.name}}
+        <br />
+        价钱：{{item.price}}
+      </view>
+    </view>
+  </view> -->
+  <view wx:if="{{money >= 1000}}" class="hero-item line">
+    <view class="left">
+      <image src="https://img1.baidu.com/it/u=3487819281,3791994073&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=887"></image>
+    </view>
+    <view class="right">
+      姓名：亚索
+      <br />
+      价钱：{{heroList[0].price}}
+    </view>
+  </view>
+  <view wx:elif="{{money >= 2000}}" class="hero-item line">
+    <view class="left">
+      <image src="https://img1.baidu.com/it/u=2963515191,1513890205&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889"></image>
+    </view>
+    <view class="right">
+      姓名：安其拉
+      <br />
+      价钱：2000
+    </view>
+  </view>
+  <view wx:elif="{{money >= 3000}}" class="hero-item line">
+    <view class="left">
+      <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F7b761d63-c0a3-423a-98cd-e13284e7296e%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1680762079&t=1b00ebcf56ab030437f8fe60a8f57c69"></image>
+    </view>
+    <view class="right">
+      姓名：赵云
+      <br />
+      价钱：3000
+    </view>
+  </view>
+  <view wx:else="{{money >= 4000}}" class="hero-item line">
+    <view class="left">
+      <image src="https://img0.baidu.com/it/u=2943249199,4206968448&fm=253&fmt=auto&app=138&f=JPEG?w=528&h=500"></image>
+    </view>
+    <view class="right">
+      姓名：鲁班
+      <br />
+      价钱：4000
+    </view>
+  </view>
+</view>

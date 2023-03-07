@@ -1,0 +1,42 @@
+/* pages/time16/time16.wxss */
+view {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  text-align: center;
+  width: 375px;
+  align-items: center;
+}
+
+.line {
+  width: 100%;
+}
+
+.hero-item {
+  width: 100%;
+}
+
+.hero-item .left {
+  display: inline-block;
+  width: 75%;
+  height: 100px;
+}
+
+.hero-item .right {
+  display: inline-block;
+  width: 25%;
+  height: 100px;
+}
+
+image {
+  width: 100%;
+}
+
+.color-item {
+  display: inline-block;
+  border: 1px;
+  border-style: groove;
+}

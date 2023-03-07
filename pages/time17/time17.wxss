@@ -1,0 +1,19 @@
+/* pages/time17/time17.wxss */
+.line {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  min-height: 50px;
+}
+
+.A {
+  background-color: greenyellow;
+}
+
+.B {
+  background-color: rgb(226, 85, 20);
+}
+
+.C {
+  background-color: rgb(13, 107, 184);
+}
