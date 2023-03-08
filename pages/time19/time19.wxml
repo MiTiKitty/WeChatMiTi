@@ -1,0 +1,12 @@
+<!--pages/time19/time19.wxml-->
+<view class="box">
+  <view class="line b">
+    <input class="my-input col left" model:value="{{itemName}}" type="text" placeholder="元素名称"/>
+    <button class="my-btn col right" bindtap="addItem">添加</button>
+  </view>
+  <view class="line">
+    <view class="item" wx:for="{{items}}" wx:key="index" style="background-color: {{item.backColor}};">
+      <text style="color: {{item.color}};">{{item.name}}</text>
+    </view>
+  </view>
+</view>

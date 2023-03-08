@@ -1,0 +1,53 @@
+/* pages/time19/time19.wxss */
+view {
+  box-sizing: border-box;
+}
+
+.box{
+  align-items: center;
+}
+
+.line {
+  margin: 1px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid steelblue;
+  padding: 10px;
+}
+
+.b {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  display: inline-block;
+  height: 50px;
+}
+
+.left {
+  width: 70%;
+  margin-right: 10px;
+}
+
+.right {
+  width: 30%;
+  margin-left: 10px;
+}
+
+.my-input {
+  border: 1px solid #34eda5;
+  text-align: start;
+  text-indent: 1.1em;
+}
+
+.my-btn {
+  border: 1px solid red;
+}
+
+.item {
+  text-align: start;
+  text-indent: 1.5em;
+  margin: 5px 2px;
+  padding: 10px;
+}
