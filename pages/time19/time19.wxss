@@ -3,7 +3,7 @@ view {
   box-sizing: border-box;
 }
 
-.box{
+.box {
   align-items: center;
 }
 
@@ -22,6 +22,10 @@ view {
 
 .col {
   display: inline-block;
+  height: 40px;
+}
+
+.h {
   height: 50px;
 }
 
@@ -35,6 +39,10 @@ view {
   margin-left: 10px;
 }
 
+.none {
+  margin: 0;
+}
+
 .my-input {
   border: 1px solid #34eda5;
   text-align: start;
@@ -46,8 +54,34 @@ view {
 }
 
 .item {
+  position: relative;
   text-align: start;
   text-indent: 1.5em;
   margin: 5px 2px;
-  padding: 10px;
+  height: 60px;
+  padding: 10px 0;
+}
+
+.l-b {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.r-b {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+
+#rem-btn {
+  background-color: red;
+  color: #fef;
+  font-size: 14px;
+  text-indent: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  border: 2px solid #fff;
+  border-radius: 10px;
 }

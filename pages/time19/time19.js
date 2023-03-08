@@ -19,10 +19,11 @@ Page({
     const ne = items.filter((item) => {
       return item.name == itemName;
     });
+    const item = this.createItem(itemName)
+    this.clear()
     if (ne.length != 0) {
       return;
     }
-    const item = this.createItem(itemName);
     this.setData({
       items: [...items, item]
     })
@@ -32,12 +33,10 @@ Page({
     let backColor = "#"
     let color = "#"
     const {pos} = this.data
-    for (let index = 0; index < 6; index++) {
-      const i =Math.floor(Math.random() * pos.length)
-      const a = pos[i]
-      const b = pos[pos.length - i - 1]
-      backColor += a
-      color += b
+    for (let i = 0; i < 6; i++) {
+      const index = Math.floor(Math.random() * pos.length)
+      backColor += pos[index]
+      color += pos[pos.length - index - 1]
     }
     return {
       name: name,
@@ -47,7 +46,20 @@ Page({
   },
 
   removeItem(e){
+    const name = e.target.dataset.name
+    const {items} = this.data
+    const newItems = items.filter((item) => {
+      return item.name != name
+    })
+    this.setData({
+      items: newItems
+    })
+  },
 
+  clear(){
+    this.setData({
+      itemName: ''
+    })
   },
 
   /**
