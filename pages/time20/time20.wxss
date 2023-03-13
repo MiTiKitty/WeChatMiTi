@@ -1,0 +1,38 @@
+/* pages/time20/time20.wxss */
+.box {
+  margin-top: 30px;
+  width: 350px;
+  padding: 20px 10px;
+  border: 1px solid rgb(0, 102, 255);
+  text-align: center;
+  margin: auto;
+}
+
+.item {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid rgb(255, 16, 48);
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.item:nth-child(1){
+  background-color: rgb(247, 167, 167);
+}
+
+.item:nth-child(2){
+  background-color: rgb(186, 247, 167);
+}
+
+.item:nth-child(3){
+  background-color: rgb(167, 228, 247);
+}
+
+.active {
+  color: red;
+}

@@ -7,7 +7,7 @@
   <view class="line" wx:if="{{items.length > 0}}">
     <view class="item" wx:for="{{items}}" wx:key="index" style="background-color: {{item.backColor}};">
       <view class="col none l-b" style="color: {{item.color}};">
-        <text style="line-height: 40px;text-shadow: 1em;">{{item.name}}</text>
+        <text style="line-height: 40px;text-shadow: 1em;font-weight: bolder;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: italic;font-size: 20px;">{{item.name}}</text>
       </view>
       <view class="col none r-b">
         <button class="my-btn" id="rem-btn" size="mini" bindtap="removeItem" data-name="{{item.name}}">删除</button>

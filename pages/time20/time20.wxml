@@ -1,0 +1,6 @@
+<!--pages/time20/time20.wxml-->
+<view class="box">
+  <view class="{{['item', current == index ? 'active' : '']}}" wx:for="{{items}}" data-index="{{index}}" bindtap="changeColor" wx:key="index">
+    {{item.name}}
+  </view>
+</view>

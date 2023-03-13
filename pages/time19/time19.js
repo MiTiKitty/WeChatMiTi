@@ -7,32 +7,44 @@ Page({
   data: {
     pos: '01234567890abcdef',
     itemName: '',
-    items:[{
+    items: [{
       name: "王者荣耀",
       backColor: "#3e1",
       color: "#c1e"
     }]
   },
 
-  addItem(e){
-    const {items, itemName} = this.data;
+  /**
+   * 添加元素
+   */
+  addItem() {
+    const {
+      items,
+      itemName
+    } = this.data
     const ne = items.filter((item) => {
-      return item.name == itemName;
-    });
+      return item.name == itemName
+    })
     const item = this.createItem(itemName)
-    this.clear()
-    if (ne.length != 0) {
-      return;
+    this.clearItemName()
+    if (ne.length != 0 || itemName.length == 0) {
+      return
     }
     this.setData({
       items: [...items, item]
     })
   },
 
-  createItem(name){
+  /**
+   * 创建一个元素
+   * @param {元素名称} name 
+   */
+  createItem(name) {
     let backColor = "#"
     let color = "#"
-    const {pos} = this.data
+    const {
+      pos
+    } = this.data
     for (let i = 0; i < 6; i++) {
       const index = Math.floor(Math.random() * pos.length)
       backColor += pos[index]
@@ -45,9 +57,15 @@ Page({
     }
   },
 
-  removeItem(e){
+  /**
+   * 根据选项参数，删除对应元素
+   * @param {选项参数} e 
+   */
+  removeItem(e) {
     const name = e.target.dataset.name
-    const {items} = this.data
+    const {
+      items
+    } = this.data
     const newItems = items.filter((item) => {
       return item.name != name
     })
@@ -56,7 +74,10 @@ Page({
     })
   },
 
-  clear(){
+  /**
+   * 清空itemName
+   */
+  clearItemName() {
     this.setData({
       itemName: ''
     })
